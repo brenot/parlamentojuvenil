@@ -5,7 +5,7 @@
 <!-- SOBRE Section -->
 <section class="quempode mb-0 pt-5 " id="quem-pode">
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row text-center">
 
 

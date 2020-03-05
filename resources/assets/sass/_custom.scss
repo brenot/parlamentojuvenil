@@ -22,7 +22,10 @@ h2 {
     font-family: 'Bangers', cursive;
     font-size: 3em;
 
+    @media (max-width: 767.98px) {
+      font-size: 8vw;
 
+    }
 
 
     /*font-family: 'Luckiest Guy';*/
