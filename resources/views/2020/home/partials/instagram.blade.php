@@ -2,7 +2,7 @@
 
 
 
-    <div class="container-fluid instagram">
+    <div class="container instagram">
         <div class="row pt-5">
             <div class="col-12 pt-5">
                 <h2 class="text-center pt-5">Instagram</h2>

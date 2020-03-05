@@ -1,6 +1,6 @@
 <!-- DOWNLOADS Section -->
 <section class="downloads mb-0" id="downloads">
-    <div class="container-fluid">
+    <div class="container">
         <h2 class="text-center ">Downloads</h2>
         <h4 class="text-center ">Você pode precisar desses documentos</h4>
         <div class="row">

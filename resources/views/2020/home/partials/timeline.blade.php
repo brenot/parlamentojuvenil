@@ -2,7 +2,7 @@
 
 <!-- CRONOGRAMA Section -->
 <section class="cronograma mb-0" id="cronograma">
-    <div class="container-fluid">
+    <div class="container">
         <h2 class="text-center ">Cronograma</h2>
         <div class="row">
             <div class="col-lg-12 ">
