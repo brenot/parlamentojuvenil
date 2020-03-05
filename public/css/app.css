@@ -9691,6 +9691,12 @@ h2 {
   text-shadow: 0 0.1em 10px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
 }
 
+@media (max-width: 767.98px) {
+  .masthead h2 {
+    font-size: 8vw;
+  }
+}
+
 .bg-secondary {
   background: #ffc400 !important;
 }
@@ -10076,6 +10082,12 @@ h4 {
   align-content: center;
   border-bottom: #000000 solid 8px;
   padding: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .home-layout section {
+    padding: 0;
+  }
 }
 
 .home-layout section:nth-of-type(1) {

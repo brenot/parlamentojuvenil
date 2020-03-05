@@ -77,6 +77,10 @@
     border-bottom: #000000 solid 8px;
     padding: 3rem;
 
+    @media (max-width: 767.98px) {
+      padding: 0;
+    }
+
     &:nth-of-type(1){
       background: #d52b21;
       border-top: #000000 solid 8px;
