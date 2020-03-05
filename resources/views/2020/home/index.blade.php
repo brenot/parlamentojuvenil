@@ -22,7 +22,7 @@
 --}}
 
 
-        @include( get_current_year().'.home.partials.instagram')
+    {{--    @include( get_current_year().'.home.partials.instagram')--}}
 
     </div>
 
