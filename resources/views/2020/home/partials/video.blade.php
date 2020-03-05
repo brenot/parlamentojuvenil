@@ -5,7 +5,7 @@
 <!-- VIDEO Section -->
 <section class="video mb-0 " id="video">
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="offset-md-2 col-12 col-md-8 text-center">
                 <h2 class="mb-5 mt-4">O Parlamento Juvenil</h2>
