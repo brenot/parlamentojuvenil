@@ -71,7 +71,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary header-bg fixed-top " id="mainNav">
 
         <div class="container-fluid">
-            <div class="col-10 col-md-6 col-lg-2 offset-lg-1">
+            <div class="col-6 offset-3 col-md-6 col-lg-2 offset-lg-1">
                 <a class="navbar-brand js-scroll-trigger" href="/#page-top">
                     <img class="logo-parlamento img-fluid" src="/templates/{{ get_current_year() }}/assets/img/logo-parlamento.png">
                 </a>
@@ -86,7 +86,7 @@
 
             </div>
 
-            <div class="col-1 pull-right logo-alerj-topo">
+            <div class="col-1 pull-right logo-alerj-topo d-none d-lg-block">
                 <img class="logo-alerj img-fluid" src="/templates/{{ get_current_year() }}/assets/img/logo-alerj-topo.png">
                 <div class="edicao2020 text-center"> EDIÇÃO 2020 </div>
             </div>

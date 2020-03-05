@@ -1,6 +1,9 @@
 
 .header-bg {
-  background: #ffc400 url("/templates/2020/assets/img/header-background.png") center no-repeat   !important;
+  background: #ffc400 url("/templates/2020/assets/img/header-background.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 
@@ -35,5 +38,37 @@
     color: #ffffff;
     padding-top: 5px;
     font-family: 'balloonbold';
+  }
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 766px) {
+  .header-bg {
+    background: #ffc400 none !important;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .nav-item {
+    text-align: center;
+    border-bottom: solid 1px #000000;
+  }
+  .nav-item:first-child {
+    border-top: solid 1px #000000;
+  }
+}
+
+.navbar {
+
+  .bg-primary {
+    background-color: #000000 !important;
+
+    &:focus {
+      background-color: #000000 !important;
+    }
+
+
   }
 }
