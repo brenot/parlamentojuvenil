@@ -9691,12 +9691,6 @@ h2 {
   text-shadow: 0 0.1em 10px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
 }
 
-@media (min-width: 992px) {
-  .masthead h2 {
-    font-size: 5.75em;
-  }
-}
-
 .bg-secondary {
   background: #ffc400 !important;
 }
@@ -9924,11 +9918,17 @@ h2 {
 
 h3 {
   font-family: 'Bangers', cursive;
-  font-size: 4em;
+  font-size: 4vw;
   /* font-family: 'Luckiest Guy'; */
   color: #fff;
   text-shadow: 0 0.1em 10px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
   /*padding-bottom: 100px;*/
+}
+
+@media (max-width: 767.98px) {
+  h3 {
+    font-size: 7vw;
+  }
 }
 
 h4 {
