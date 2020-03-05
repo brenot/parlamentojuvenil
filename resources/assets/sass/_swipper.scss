@@ -94,5 +94,12 @@
 
 
 .swipper-banner{
-  padding-top: 100px;
+
+
+  @media (min-width: 992px) {
+    padding-top: 100px;
+
+  }
+
+
 }

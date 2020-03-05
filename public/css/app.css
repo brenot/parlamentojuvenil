@@ -10451,8 +10451,10 @@ blockquote.electric span {
   }
 }
 
-.swipper-banner {
-  padding-top: 100px;
+@media (min-width: 992px) {
+  .swipper-banner {
+    padding-top: 100px;
+  }
 }
 
 .comic {
