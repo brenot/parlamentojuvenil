@@ -7,7 +7,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="offset-md-2 col-12 col-md-8 text-center">
                 <h2 class="mb-5 mt-4">O Parlamento Juvenil</h2>
 
                 <div class="mt-5">

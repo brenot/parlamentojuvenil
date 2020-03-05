@@ -9683,12 +9683,18 @@ h2 {
 
 .masthead h2 {
   font-family: 'Bangers', cursive;
-  font-size: 5.75em;
+  font-size: 3em;
   /*font-family: 'Luckiest Guy';*/
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 0px -4px 0 #212121, 0px -4px 0 #212121, 0px 4px 0 #212121, 0px 4px 0 #212121, -4px 0px 0 #212121, 4px 0px 0 #212121, -4px 0px 0 #212121, 4px 0px 0 #212121, -4px -4px 0 #212121, 4px -4px 0 #212121, -4px 4px 0 #212121, 4px 4px 0 #212121, -4px 18px 0 #212121, 0px 18px 0 #212121, 4px 18px 0 #212121, 0 19px 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1), 0 4px 3px rgba(0, 0, 0, 0.3), 0 12px 4px rgba(0, 0, 0, 0.2), 0 14px 14px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.2), 0 24px 244px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 0.1em 10px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
+}
+
+@media (min-width: 992px) {
+  .masthead h2 {
+    font-size: 5.75em;
+  }
 }
 
 .bg-secondary {
@@ -9696,7 +9702,13 @@ h2 {
 }
 
 .banner-001 {
-  background: url("/templates/2020/assets/img/fundo_banner_001.jpg");
+  background: url("/templates/2020/assets/img/fundo_banner_001.jpg") !important;
+  background-position: center !important;
+  /* Center the image */
+  background-repeat: no-repeat !important;
+  /* Do not repeat the image */
+  background-size: cover !important;
+  /* Resize the background image to cover the entire container */
 }
 
 .quempode {
@@ -9919,8 +9931,33 @@ h3 {
   /*padding-bottom: 100px;*/
 }
 
+h4 {
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+  /* font-family: 'Luckiest Guy'; */
+  color: #fff;
+  text-shadow: 0 0.1em 10px black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
+  /*padding-bottom: 100px;*/
+}
+
+.instagram a {
+  color: #ffffff;
+}
+
+.instagram a:hover {
+  color: #eee;
+}
+
+.fontbigger {
+  font-size: 120%;
+  font-weight: 800;
+}
+
 .header-bg {
-  background: #ffc400 url("/templates/2020/assets/img/header-background.png") center no-repeat !important;
+  background: #ffc400 url("/templates/2020/assets/img/header-background.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 #mainNav {
@@ -9951,6 +9988,30 @@ h3 {
   color: #ffffff;
   padding-top: 5px;
   font-family: 'balloonbold';
+}
+
+@media (max-width: 766px) {
+  .header-bg {
+    background: #ffc400 none !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav-item {
+    text-align: center;
+    border-bottom: solid 1px #000000;
+  }
+  .nav-item:first-child {
+    border-top: solid 1px #000000;
+  }
+}
+
+.navbar .bg-primary {
+  background-color: #000000 !important;
+}
+
+.navbar .bg-primary:focus {
+  background-color: #000000 !important;
 }
 
 .splash-001 {
@@ -10009,7 +10070,7 @@ h3 {
 }
 
 .home-layout section {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   justify-content: center;
   align-content: center;
@@ -10090,11 +10151,37 @@ blockquote.electric span {
   padding-bottom: 20%;
 }
 
+@media (max-width: 767.98px) {
+  .quempode blockquote.speech {
+    padding-bottom: 55%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .quempode blockquote.speech {
+    padding-bottom: 30%;
+  }
+}
+
 .quempode blockquote.speech .inner {
-  padding: 0 15% 0 15%;
-  font-size: 1.7rem;
+  padding: 0% 15% 0 15%;
+  font-size: 1.7vw;
   background-size: cover;
   font-family: 'balloonbold';
+}
+
+@media (max-width: 767.98px) {
+  .quempode blockquote.speech .inner {
+    padding: 7% 15% 0 15%;
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .quempode blockquote.speech .inner {
+    font-size: 2.7vw;
+    padding-top: 2%;
+  }
 }
 
 .quempode blockquote.speech-reverse {
@@ -10105,12 +10192,113 @@ blockquote.electric span {
   transform: rotateY(180deg);
 }
 
+@media (max-width: 767.98px) {
+  .quempode blockquote.speech-reverse {
+    padding-bottom: 55%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .quempode blockquote.speech-reverse {
+    padding-bottom: 30%;
+  }
+}
+
 .quempode blockquote.speech-reverse .inner {
-  padding: 0 15% 0 15%;
-  font-size: 1.7rem;
+  padding: 0% 15% 0 15%;
+  font-size: 1.7vw;
   background-size: cover;
   font-family: 'balloonbold';
   transform: rotateY(180deg);
+}
+
+@media (max-width: 767.98px) {
+  .quempode blockquote.speech-reverse .inner {
+    padding: 7% 15% 0 15%;
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .quempode blockquote.speech-reverse .inner {
+    font-size: 2.7vw;
+    padding-top: 2%;
+  }
+}
+
+.swipper blockquote.speech {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  width: 80%;
+  padding-top: 6%;
+  padding-bottom: 50%;
+}
+
+.swipper blockquote.speech .inner {
+  padding: 0 15% 0 15%;
+  font-size: 1.7rem;
+}
+
+.swipper blockquote.speech-reverse {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  width: 80%;
+  padding-top: 6%;
+  padding-bottom: 50%;
+  transform: rotateY(180deg);
+}
+
+.swipper blockquote.speech-reverse .inner {
+  padding: 0 15% 0 15%;
+  font-size: 1.7rem;
+  /*background-size: cover;
+      font-family: 'balloonbold';*/
+  transform: rotateY(180deg);
+}
+
+.swipper blockquote.electric {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
+  width: 90%;
+  font-size: 1.1vw;
+  font-style: italic;
+  padding: 10% 6% 30% 0%;
+}
+
+.swipper blockquote.electric .inner {
+  margin-left: 96px;
+  margin-right: 229px;
+}
+
+.swipper blockquote.electric-reverse {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
+  width: 95%;
+  font-size: 2.5vw;
+  font-style: italic;
+  padding: 10% 6% 30% 0%;
+  transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  .swipper blockquote.electric-reverse {
+    font-size: 1.5vw;
+  }
+}
+
+.swipper blockquote.electric-reverse .inner {
+  margin-left: 7%;
+  margin-right: 20%;
+  transform: rotateY(180deg);
+  background: #ff00ff;
+}
+
+.swipper blockquote.electric span {
+  display: block;
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+
+.swipper blockquote.electric-reverse span {
+  display: block;
+  font-size: 1.6vw;
+  font-weight: bold;
 }
 
 .comofunciona blockquote.electric {
@@ -10249,6 +10437,10 @@ blockquote.electric span {
   .splash-002 p {
     line-height: 1.8rem;
   }
+}
+
+.swipper-banner {
+  padding-top: 100px;
 }
 
 .comic {
