@@ -1,30 +1,30 @@
 <!-- INSTAGRAM Section -->
 
 
+<section class="instagram">
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="col-12 pt-5">
+                <h2 class="text-center pt-5">Instagram</h2>
+
+                <h3 class="text-center pt-3 pb-5">
+                    Siga o nosso perfil <a href="https://www.instagram.com/parlamentojuvenilrj/" target="_blank"> @parlamentojuvenilrj </a>
+                </h3>
 
 
-<div class="container-fluid instagram">
-    <div class="row pt-5">
-        <div class="col-12 pt-5">
-            <h2 class="text-center pt-5">Instagram</h2>
+                <div class="card-columns">
+                    @foreach($instagramPictures as $image)
+                        <div class="card">
+                            <img src=" {{ $image }}" alt="" class="img-fluid" />
+                        </div>
+                    @endforeach
+                </div>
 
-            <h3 class="text-center pt-3 pb-5">
-                Siga o nosso perfil <a href="https://www.instagram.com/parlamentojuvenilrj/" target="_blank"> @parlamentojuvenilrj </a>
-            </h3>
-
-
-            <div class="card-columns">
-                @foreach($instagramPictures as $image)
-                    <div class="card">
-                        <img src=" {{ $image }}" alt="" class="img-fluid" />
-                    </div>
-                @endforeach
             </div>
-
         </div>
     </div>
+</section>
 
-</div>
 
 
 {{--
