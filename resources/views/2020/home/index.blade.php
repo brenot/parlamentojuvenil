@@ -5,11 +5,11 @@
     <div class="home-layout">
 
 
-        @include( get_current_year().'.home.partials.swiper')
-        @include( get_current_year().'.home.partials.video')
+{{--        @include( get_current_year().'.home.partials.swiper')--}}
+        {{--@include( get_current_year().'.home.partials.video')--}}
+        {{--@include( get_current_year().'.home.partials.howitworks')--}}
 
 
-        @include( get_current_year().'.home.partials.howitworks')
 
 
         {{--        @include( get_current_year().'.home.partials.about')--}}
@@ -17,7 +17,7 @@
 
 
 
-        @include( get_current_year().'.home.partials.whocan')
+        {{--@include( get_current_year().'.home.partials.whocan')--}}
 
 
 
@@ -30,7 +30,7 @@
         --}}
 
 
-            @include( get_current_year().'.home.partials.instagram')
+            {{--@include( get_current_year().'.home.partials.instagram')--}}
 
     </div>
 
