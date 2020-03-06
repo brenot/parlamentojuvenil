@@ -3,11 +3,10 @@
 
 
 <!-- SOBRE Section -->
-<section class="quempode mb-0 pt-5 " id="quem-pode">
+<section class="quempode " id="quem-pode">
 
     <div class="container-fluid">
         <div class="row text-center">
-
 
 
             <div class="col-12">

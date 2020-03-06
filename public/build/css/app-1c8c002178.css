@@ -10335,6 +10335,12 @@ blockquote.electric-reverse span {
   padding: 10% 6% 30% 0%;
 }
 
+@media (max-width: 767.98px) {
+  .comofunciona blockquote.electric {
+    padding: 10% 6% 65% 0%;
+  }
+}
+
 .comofunciona blockquote.electric .inner {
   margin-left: 13%;
   margin-right: 27%;
@@ -10344,7 +10350,7 @@ blockquote.electric-reverse span {
 @media (max-width: 1199.98px) {
   .comofunciona blockquote.electric .inner {
     font-size: 2.7vw;
-    padding-top: 2%;
+    padding-top: 5%;
   }
 }
 
@@ -10354,12 +10360,22 @@ blockquote.electric-reverse span {
   }
 }
 
+.comofunciona blockquote.electric .inner .small {
+  font-size: 0.9em;
+}
+
 .comofunciona blockquote.electric-reverse {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
   width: 100%;
   font-style: italic;
   padding: 10% 6% 30% 0%;
   transform: rotateY(180deg);
+}
+
+@media (max-width: 767.98px) {
+  .comofunciona blockquote.electric-reverse {
+    padding: 10% 6% 80% 0%;
+  }
 }
 
 .comofunciona blockquote.electric-reverse .inner {
@@ -10371,14 +10387,96 @@ blockquote.electric-reverse span {
 
 .comofunciona blockquote.electric span {
   display: block;
-  font-size: 1.6vw;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
 .comofunciona blockquote.electric-reverse span {
   display: block;
-  font-size: 1.6vw;
+  font-size: 1.1em;
   font-weight: bold;
+}
+
+.comofunciona blockquote.speech {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  width: 90%;
+  padding-top: 6%;
+  padding-bottom: 20%;
+}
+
+@media (max-width: 1199.98px) {
+  .comofunciona blockquote.speech {
+    padding-bottom: 30%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .comofunciona blockquote.speech {
+    padding-bottom: 55%;
+  }
+}
+
+.comofunciona blockquote.speech .inner {
+  padding: 0% 15% 0 15%;
+  font-size: 1.7vw;
+  background-size: cover;
+  font-family: 'balloonbold';
+}
+
+@media (max-width: 1199.98px) {
+  .comofunciona blockquote.speech .inner {
+    font-size: 2.7vw;
+    padding-top: 2%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .comofunciona blockquote.speech .inner {
+    padding: 2% 15% 0 15%;
+    font-size: 5vw;
+  }
+}
+
+.comofunciona blockquote.speech-reverse {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
+  width: 90%;
+  padding-top: 6%;
+  padding-bottom: 20%;
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 1199.98px) {
+  .comofunciona blockquote.speech-reverse {
+    padding-bottom: 30%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .comofunciona blockquote.speech-reverse {
+    padding-bottom: 55%;
+  }
+}
+
+.comofunciona blockquote.speech-reverse .inner {
+  padding: 0% 15% 0 15%;
+  font-size: 1.7vw;
+  background-size: cover;
+  font-family: 'balloonbold';
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 1199.98px) {
+  .comofunciona blockquote.speech-reverse .inner {
+    font-size: 2.7vw;
+    padding-top: 2%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .comofunciona blockquote.speech-reverse .inner {
+    padding: 2% 15% 0 15%;
+    font-size: 5vw;
+  }
 }
 
 .downloads blockquote.electric {
