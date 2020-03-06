@@ -7,15 +7,15 @@
 <!-- VIDEO Section -->
 <section class="swipper mb-0 banner-001" id="swipper">
 
-    <div class="container">
-        <div class="row swipper-banner">
+    <div class="container ">
+        <div class="row swipper-banner pt-2">
             <div class="col-12 col-lg-6 text-center ">
 
-                <blockquote class="electric-reverse bubble">
+                <blockquote class="speech bubble">
                     <div class="inner">
                         <h4 class="">Inscrições</h4>
 
-                        <p class="fontbigger"> De 6 de Maio a 7 de Junho </p>
+                        <p class="fontbigger"> De 30 de Março <br>a 17 de Maio </p>
                         <p> Para alunos do 1º e 2º ano do ensino médio da rede pública estadual, com idade entre 14 e 17 anos.</p>
                     </div>
                 </blockquote>
@@ -24,15 +24,16 @@
 
             <div class="col-12 col-lg-6">
                 <blockquote class="speech-reverse bubble">
+
                     <div class="inner">
                         <h4>Eleições</h4>
                         <p>
                             <span class="fontbigger">1º Turno</span><br>
-                            13 de Junho
+                            02 de Junho
                         </p>
                         <p>
                             <span class="fontbigger">2º Turno</span><br>
-                            4 a 7 de Julho
+                            25 a 28 de Julho
                         </p>
                     </div>
                 </blockquote>
