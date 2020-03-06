@@ -5,7 +5,7 @@
     <div class="home-layout">
 
 
-{{--        @include( get_current_year().'.home.partials.swiper')--}}
+        @include( get_current_year().'.home.partials.swiper')
         {{--@include( get_current_year().'.home.partials.video')--}}
         {{--@include( get_current_year().'.home.partials.howitworks')--}}
 
