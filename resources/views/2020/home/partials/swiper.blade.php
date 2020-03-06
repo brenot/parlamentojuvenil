@@ -7,7 +7,7 @@
 <!-- VIDEO Section -->
 <section class="swipper mb-0 banner-001" id="swipper">
 
-    <div class="container-fluid ">
+    <div class="container">
         <div class="row swipper-banner">
             <div class="col-12 col-lg-6 text-center ">
 
