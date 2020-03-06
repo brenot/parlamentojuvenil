@@ -144,6 +144,8 @@ blockquote.electric {
   font-style: italic;
   padding: 4% 6% 12% 0%;
 }
+
+
 blockquote.electric span {
   display: block;
   font-size: 3vw;
@@ -226,13 +228,25 @@ blockquote.electric span {
 .swipper {
   blockquote.speech {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
-    width: 80%;
+    width: 95%;
     padding-top: 6%;
-    padding-bottom: 50%;
+    padding-bottom: 93%;
+
+
+    @media (max-width: 767.98px) {
+      padding-top: 12%;
+      padding-bottom: 120%;
+    }
 
     .inner{
       padding: 0 15% 0 15%;
-      font-size: 1.7rem;
+      font-size: 5vw;
+      /*background-size: cover;
+      font-family: 'balloonbold';*/
+
+      @media (min-width: 768px) {
+        font-size: 1.5vw;
+      }
     }
   }
 
@@ -240,7 +254,7 @@ blockquote.electric span {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
     width: 95%;
     padding-top: 6%;
-    padding-bottom: 50%;
+    padding-bottom: 75%;
     transform: rotateY(180deg);
 
     @media (max-width: 767.98px) {
@@ -262,13 +276,13 @@ blockquote.electric span {
   }
 
 
-  blockquote.electric-reverse {
+  blockquote.electric {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
     width: 95%;
     font-size: 5vw;
     font-style: italic;
     padding: 10% 6% 30% 0%;
-    transform: rotateY(180deg);
+
 
     @media (max-width: 767.98px) {
       padding: 10% 6% 70% 0%;
@@ -285,7 +299,7 @@ blockquote.electric span {
     .inner {
       margin-left: 7%;
       margin-right: 20%;
-      transform: rotateY(180deg);
+
 
       @media (max-width: 767.98px) {
         margin-left: 12%;

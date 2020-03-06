@@ -10240,21 +10240,36 @@ blockquote.electric span {
 
 .swipper blockquote.speech {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
-  width: 80%;
+  width: 95%;
   padding-top: 6%;
-  padding-bottom: 50%;
+  padding-bottom: 93%;
+}
+
+@media (max-width: 767.98px) {
+  .swipper blockquote.speech {
+    padding-top: 12%;
+    padding-bottom: 120%;
+  }
 }
 
 .swipper blockquote.speech .inner {
   padding: 0 15% 0 15%;
-  font-size: 1.7rem;
+  font-size: 5vw;
+  /*background-size: cover;
+      font-family: 'balloonbold';*/
+}
+
+@media (min-width: 768px) {
+  .swipper blockquote.speech .inner {
+    font-size: 1.5vw;
+  }
 }
 
 .swipper blockquote.speech-reverse {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg);
   width: 95%;
   padding-top: 6%;
-  padding-bottom: 50%;
+  padding-bottom: 75%;
   transform: rotateY(180deg);
 }
 
@@ -10279,38 +10294,36 @@ blockquote.electric span {
   }
 }
 
-.swipper blockquote.electric-reverse {
+.swipper blockquote.electric {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/electric.svg);
   width: 95%;
   font-size: 5vw;
   font-style: italic;
   padding: 10% 6% 30% 0%;
-  transform: rotateY(180deg);
 }
 
 @media (max-width: 767.98px) {
-  .swipper blockquote.electric-reverse {
+  .swipper blockquote.electric {
     padding: 10% 6% 70% 0%;
   }
-  .swipper blockquote.electric-reverse h4 {
+  .swipper blockquote.electric h4 {
     font-size: 1.5em;
   }
 }
 
 @media (min-width: 768px) {
-  .swipper blockquote.electric-reverse {
+  .swipper blockquote.electric {
     font-size: 1.5vw;
   }
 }
 
-.swipper blockquote.electric-reverse .inner {
+.swipper blockquote.electric .inner {
   margin-left: 7%;
   margin-right: 20%;
-  transform: rotateY(180deg);
 }
 
 @media (max-width: 767.98px) {
-  .swipper blockquote.electric-reverse .inner {
+  .swipper blockquote.electric .inner {
     margin-left: 12%;
     margin-right: 27%;
   }
