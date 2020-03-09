@@ -9959,6 +9959,12 @@ h4 {
   font-weight: 800;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .masthead {
+    padding-top: 11rem;
+  }
+}
+
 .header-bg {
   background: #ffc400 url("/templates/2020/assets/img/header-background.png") !important;
   background-size: cover !important;
@@ -10252,6 +10258,12 @@ blockquote.electric span {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .swipper blockquote.speech {
+    padding-bottom: 75%;
+  }
+}
+
 .swipper blockquote.speech .inner {
   padding: 0 15% 0 15%;
   font-size: 5vw;
@@ -10259,7 +10271,13 @@ blockquote.electric span {
       font-family: 'balloonbold';*/
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .swipper blockquote.speech .inner {
+    font-size: 3.5vw;
+  }
+}
+
+@media (min-width: 992px) {
   .swipper blockquote.speech .inner {
     font-size: 1.5vw;
   }
@@ -10280,6 +10298,12 @@ blockquote.electric span {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .swipper blockquote.speech-reverse {
+    padding-bottom: 75%;
+  }
+}
+
 .swipper blockquote.speech-reverse .inner {
   padding: 0 15% 0 15%;
   font-size: 5vw;
@@ -10288,7 +10312,13 @@ blockquote.electric span {
   transform: rotateY(180deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .swipper blockquote.speech-reverse .inner {
+    font-size: 3.5vw;
+  }
+}
+
+@media (min-width: 992px) {
   .swipper blockquote.speech-reverse .inner {
     font-size: 1.5vw;
   }
@@ -10351,6 +10381,12 @@ blockquote.electric-reverse span {
 @media (max-width: 767.98px) {
   .comofunciona blockquote.electric {
     padding: 10% 6% 65% 0%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .comofunciona blockquote.electric {
+    padding: 5% 6% 39% 0%;
   }
 }
 
