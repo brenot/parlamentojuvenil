@@ -243,6 +243,18 @@ function subscriptions_enabled()
         );
 }
 
+function log_exception($e)
+{
+    \Log::error(
+        'Exception ' .
+            class_basename($e) .
+            ' with ' .
+            (($user = \Auth::user())
+                ? "{$user->name}({$user->email})"
+                : 'guest')
+    );
+}
+
 function now_in_date_range($start, $end)
 {
     $now = Carbon::now();
