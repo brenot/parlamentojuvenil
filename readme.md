@@ -44,3 +44,14 @@ php artisan pj:seeduc:test-data
 
 #### Exemplo de arquivo
 `parlamentojuvenil/storage/exemploSeeduc.csv`
+
+### Fases
+
+#### Inscrição
+
+##### Variáveis no .env
+```
+SUBSCRIPTIONS_ENABLED=true
+SUBSCRIPTIONS_START=yyyy-mm-dd
+SUBSCRIPTIONS_END=yyyy-mm-dd
+```
