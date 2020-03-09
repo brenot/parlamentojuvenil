@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\AlreadySubscribed;
 use \DB;
 use Event;
 use Input;
@@ -312,9 +313,16 @@ class Subscriptions extends BaseController
 
     public function store(Subscribe $request)
     {
-        $subscription = $this->dataRepository->createSubscription($request);
+        try {
+            $subscription = $this->dataRepository->createSubscription($request);
 
-        $this->updateLoggedStudent($subscription->student);
+            $this->updateLoggedStudent($subscription->student);
+        } catch (AlreadySubscribed $e) {
+            log_exception($e);
+            return redirect()
+                ->route('home')
+                ->withErrors('Estudante já possui inscrição!');
+        }
 
         return $this->buildView('subscriptions.success');
     }
