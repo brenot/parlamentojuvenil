@@ -15,7 +15,7 @@
                     <div class="inner">
                         <h4 class="">Inscrições</h4>
 
-                        <p class="fontbigger"> De 30 de Março <br>a 17 de Maio </p>
+                        <p class="fontbigger"> De 30 de março <br>a 17 de maio </p>
                         <p> Para alunos do 1º e 2º ano do ensino médio da rede pública estadual, com idade entre 14 e 17 anos.</p>
                     </div>
                 </blockquote>
@@ -29,11 +29,11 @@
                         <h4>Eleições</h4>
                         <p>
                             <span class="fontbigger">1º Turno</span><br>
-                            02 de Junho
+                            02 de junho
                         </p>
                         <p>
                             <span class="fontbigger">2º Turno</span><br>
-                            25 a 28 de Julho
+                            25 a 28 de julho
                         </p>
                     </div>
                 </blockquote>

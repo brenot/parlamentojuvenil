@@ -238,13 +238,21 @@ blockquote.electric span {
       padding-bottom: 120%;
     }
 
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      padding-bottom: 75%;
+    }
+
     .inner{
       padding: 0 15% 0 15%;
       font-size: 5vw;
       /*background-size: cover;
       font-family: 'balloonbold';*/
 
-      @media (min-width: 768px) {
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 3.5vw;
+      }
+
+      @media (min-width: 992px) {
         font-size: 1.5vw;
       }
     }
@@ -262,6 +270,10 @@ blockquote.electric span {
       padding-bottom: 84%;
     }
 
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      padding-bottom: 75%;
+    }
+
     .inner{
       padding: 0 15% 0 15%;
       font-size: 5vw;
@@ -269,7 +281,11 @@ blockquote.electric span {
       font-family: 'balloonbold';*/
       transform: rotateY(180deg);
 
-      @media (min-width: 768px) {
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 3.5vw;
+      }
+
+      @media (min-width: 992px) {
         font-size: 1.5vw;
       }
     }
@@ -339,6 +355,9 @@ blockquote.electric-reverse span {
 
     @media (max-width: 767.98px) {
       padding: 10% 6% 65% 0%;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      padding: 5% 6% 39% 0%;
     }
 
     .inner {
