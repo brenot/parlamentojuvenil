@@ -14,14 +14,11 @@
     </li>
 
 
-    @if (config('app.subscriptions.enabled') === true)
+    @if (subscriptions_enabled() || true)
         <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/inscricao">Inscreva-se</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{route('subscriptions.index')}}">Inscreva-se</a>
         </li>
     @endif
-
-
-
 
     @if (training_enabled())
         <li class="nav-item mx-0 mx-lg-1">
