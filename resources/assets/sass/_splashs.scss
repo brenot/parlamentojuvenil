@@ -162,7 +162,9 @@ blockquote.electric span {
     padding-top: 6%;
     padding-bottom: 20%;
 
-
+    @media (min-width: 1500px) {
+      padding-bottom: 40%;
+    }
     @media (max-width: 1199.98px) {
       padding-bottom: 30%;
     }
@@ -194,6 +196,10 @@ blockquote.electric span {
     padding-top: 6%;
     padding-bottom: 20%;
     transform: rotateY(180deg);
+
+    @media (min-width: 1500px) {
+      padding-bottom: 40%;
+    }
 
     @media (max-width: 1199.98px) {
       padding-bottom: 30%;
@@ -436,6 +442,9 @@ blockquote.electric-reverse span {
     padding-top: 6%;
     padding-bottom: 20%;
 
+    @media (min-width: 1500px) {
+      padding-bottom: 35%;
+    }
 
     @media (max-width: 1199.98px) {
       padding-bottom: 30%;
@@ -468,6 +477,10 @@ blockquote.electric-reverse span {
     padding-top: 6%;
     padding-bottom: 20%;
     transform: rotateY(180deg);
+
+    @media (min-width: 1500px) {
+      padding-bottom: 35%;
+    }
 
     @media (max-width: 1199.98px) {
       padding-bottom: 30%;
