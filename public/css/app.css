@@ -10184,6 +10184,12 @@ blockquote.electric span {
   padding-bottom: 20%;
 }
 
+@media (min-width: 1500px) {
+  .quempode blockquote.speech {
+    padding-bottom: 40%;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .quempode blockquote.speech {
     padding-bottom: 30%;
@@ -10223,6 +10229,12 @@ blockquote.electric span {
   padding-top: 6%;
   padding-bottom: 20%;
   transform: rotateY(180deg);
+}
+
+@media (min-width: 1500px) {
+  .quempode blockquote.speech-reverse {
+    padding-bottom: 40%;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -10492,6 +10504,12 @@ blockquote.electric-reverse span {
   padding-bottom: 20%;
 }
 
+@media (min-width: 1500px) {
+  .comofunciona blockquote.speech {
+    padding-bottom: 35%;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .comofunciona blockquote.speech {
     padding-bottom: 30%;
@@ -10531,6 +10549,12 @@ blockquote.electric-reverse span {
   padding-top: 6%;
   padding-bottom: 20%;
   transform: rotateY(180deg);
+}
+
+@media (min-width: 1500px) {
+  .comofunciona blockquote.speech-reverse {
+    padding-bottom: 35%;
+  }
 }
 
 @media (max-width: 1199.98px) {
