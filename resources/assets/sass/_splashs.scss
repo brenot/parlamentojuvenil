@@ -253,7 +253,14 @@ blockquote.electric span {
       }
 
       @media (min-width: 992px) {
-        font-size: 1.5vw;
+        font-size: 2vw;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 1.4vw;
+      }
+      @media (min-width: 2200px) {
+        font-size: 1vw;
       }
     }
   }
@@ -286,8 +293,18 @@ blockquote.electric span {
       }
 
       @media (min-width: 992px) {
-        font-size: 1.5vw;
+        font-size: 2vw;
       }
+
+      @media (min-width: 1200px) {
+        font-size: 1.4vw;
+      }
+
+      @media (min-width: 2200px) {
+        font-size: 1vw;
+      }
+
+
     }
   }
 

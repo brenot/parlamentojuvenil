@@ -9959,9 +9959,20 @@ h4 {
   font-weight: 800;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .masthead {
-    padding-top: 11rem;
+    padding-top: 25vw !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-layout .masthead {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
+  .masthead {
+    padding-top: calc(11vw + 7px);
+    padding-bottom: 6rem;
   }
 }
 
@@ -9981,6 +9992,10 @@ h4 {
   color: #000000;
   font-family: 'balloonbold';
   font-size: 1.5rem;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #443400;
 }
 
 .logo-alerj-topo {
@@ -10279,7 +10294,19 @@ blockquote.electric span {
 
 @media (min-width: 992px) {
   .swipper blockquote.speech .inner {
-    font-size: 1.5vw;
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .swipper blockquote.speech .inner {
+    font-size: 1.4vw;
+  }
+}
+
+@media (min-width: 2200px) {
+  .swipper blockquote.speech .inner {
+    font-size: 1vw;
   }
 }
 
@@ -10320,7 +10347,19 @@ blockquote.electric span {
 
 @media (min-width: 992px) {
   .swipper blockquote.speech-reverse .inner {
-    font-size: 1.5vw;
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .swipper blockquote.speech-reverse .inner {
+    font-size: 1.4vw;
+  }
+}
+
+@media (min-width: 2200px) {
+  .swipper blockquote.speech-reverse .inner {
+    font-size: 1vw;
   }
 }
 
@@ -10590,14 +10629,6 @@ blockquote.electric-reverse span {
 }
 
 @media (min-width: 1024px) {
-  .home-layout .masthead {
-    padding-top: 0;
-    padding-bottom: 6rem;
-  }
-  .masthead {
-    padding-top: calc(13rem + 16px);
-    padding-bottom: 6rem;
-  }
   .swiper-slide {
     height: 700px;
   }
@@ -10764,6 +10795,24 @@ blockquote.electric-reverse span {
 .footer {
   background-color: #000000;
   color: #fff;
+}
+
+.footer .btn-social {
+  line-height: 2.8rem;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer a:hover {
+  color: #ffc400;
+}
+
+.footer .btn-outline-light:hover {
+  color: #212529;
+  background-color: #221a00;
+  border-color: #221a00;
 }
 
 /*# sourceMappingURL=app.css.map */
