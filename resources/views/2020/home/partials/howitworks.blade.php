@@ -12,9 +12,8 @@
 
                     <blockquote class="electric bubble">
                         <div class="inner">
-                            <p>Cada município do Rio de Janeiro pode ser representado por um parlamentar juvenil.<br>
-                                <span class="small">Exceto, a capital do Estado, que contará com três representantes e outros três municípios com maior número de candidatos inscritos válidos, que terão dois PJ’s. </span></p>
-
+                            <p>Cada município do Rio de Janeiro pode ser representado por um parlamentar juvenil.<br>
+                                <span class="small">Exceto, a capital do Estado, que contará com três representantes e outros três municípios com maior número de candidatos inscritos válidos, que terão dois PJ’s.</span></p>
                         </div>
                     </blockquote>
 
