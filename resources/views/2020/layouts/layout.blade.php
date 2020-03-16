@@ -32,6 +32,8 @@
 
         <link href="/templates/{{ get_current_year() }}/assets/css/custom.css" rel="stylesheet" type="text/css">
 
+        <link rel="shortcut icon" href="/templates/{{ get_current_year() }}/assets/img/favicon.ico">
+
     <!-- ********** FIM - DO SITE 2019 ********** -->
 
         <!-- ************* ATUALIZAÇÃO 2020 ************* -->
