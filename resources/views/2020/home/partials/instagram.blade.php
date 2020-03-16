@@ -1,6 +1,6 @@
 <!-- INSTAGRAM Section -->
 <section class="instagram" id="instagram">
-    <div class="container">
+    <div class="container pt-5">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center mt-5 mb-5">Instagram</h2>

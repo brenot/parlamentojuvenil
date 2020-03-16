@@ -1,6 +1,6 @@
 <!-- SOBRE Section -->
 <section class="quempode " id="quem-pode">
-    <div class="container">
+    <div class="container pt-5">
         <div class="row text-center">
             <div class="col-12">
                 <h2 class="text-center mt-5 mb-5">Quem Pode Participar</h2>

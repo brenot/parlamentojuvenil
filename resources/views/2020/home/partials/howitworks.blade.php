@@ -1,7 +1,7 @@
 
 <!-- COMO FUNCIONA Section -->
 <section class="comofunciona" id="como-funciona">
-    <div class="container">
+    <div class="containe pt-5">
         <h2 class="text-center mt-5 mb-5">Como Funciona</h2>
         <div class="row">
             <div class="col-12">
