@@ -9962,6 +9962,7 @@ h4 {
 @media (max-width: 991.98px) {
   .masthead {
     padding-top: 25vw !important;
+    padding-bottom: 0;
   }
 }
 
