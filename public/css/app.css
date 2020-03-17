@@ -9968,11 +9968,11 @@ h4 {
 @media (min-width: 1024px) {
   .home-layout .masthead {
     padding-top: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 0;
   }
   .masthead {
     padding-top: calc(11vw + 7px);
-    padding-bottom: 6rem;
+    padding-bottom: 0;
   }
 }
 
