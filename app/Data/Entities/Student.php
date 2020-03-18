@@ -8,18 +8,18 @@ use App\Base\Model;
 
 class Student extends Model
 {
-	protected $dates = ['created_at', 'updated_at', 'birthdate'];
+    protected $dates = ['created_at', 'updated_at', 'birthdate'];
 
-	protected $table = 'students';
+    protected $table = 'students';
 
-	protected $prefilled = [
+    protected $prefilled = [
         'registration',
         'birthdate',
         'name',
         'school',
         'city',
         'email',
-        'regional',
+        'regional'
     ];
 
     protected $fillable = [
@@ -44,7 +44,7 @@ class Student extends Model
         'address_neighborhood',
         'address_city',
         'facebook',
-        'regional',
+        'regional'
     ];
 
     protected $editable = [
@@ -66,7 +66,7 @@ class Student extends Model
         'address_neighborhood',
         'address_city',
         'facebook',
-        'regional',
+        'regional'
     ];
 
     /**
@@ -87,14 +87,12 @@ class Student extends Model
 
     public function getSocialNameAttribute()
     {
-        return
-            isset($this->attributes['social_name'])
-                ? $this->attributes['social_name']
-                : ucwords(mb_strtolower(explode(' ', trim($this->name))[0]))
-        ;
-	}
+        return isset($this->attributes['social_name'])
+            ? $this->attributes['social_name']
+            : ucwords(mb_strtolower(explode(' ', trim($this->name))[0]));
+    }
 
-	public static function createStudent($attributes)
+    public static function createStudent($attributes)
     {
         $student = static::create($attributes);
 
@@ -114,7 +112,7 @@ class Student extends Model
     {
         $what = Subscription::findByStudent($this);
 
-        return ! is_null($what);
+        return !is_null($what);
     }
 
     public function subscriptions()
@@ -129,14 +127,19 @@ class Student extends Model
 
     public function hasRightAge()
     {
-        return true;
+        $date = Carbon::parse($this->attributes['birthdate'])->startOfDay();
 
-// &&& BACALHAU
-// PARA VER SE TODOS CONSEGUEM VOTAR!!!
-//        $date = Carbon::parse($this->attributes['birthdate'])->format('Y-m-d');
-//
-//        return $date >= config('app.student.birthdate.start') &&
-//                $date <= config('app.student.birthdate.end');
+        $start = Carbon::createFromFormat(
+            'Y-m-d',
+            config('app.student.birthdate.start')
+        )->startOfDay();
+
+        $end = Carbon::createFromFormat(
+            'Y-m-d',
+            config('app.student.birthdate.end')
+        )->startOfDay();
+
+        return $date >= $start && $date <= $end;
     }
 
     public function flagVotes()
@@ -146,8 +149,12 @@ class Student extends Model
 
     public function votedInCurrentFlagContest()
     {
-//        dd($this->flagVotes()->where('year', get_current_year())->first());
+        //        dd($this->flagVotes()->where('year', get_current_year())->first());
 
-        return ! is_null($this->flagVotes()->where('year', get_current_year())->first());
+        return !is_null(
+            $this->flagVotes()
+                ->where('year', get_current_year())
+                ->first()
+        );
     }
 }
