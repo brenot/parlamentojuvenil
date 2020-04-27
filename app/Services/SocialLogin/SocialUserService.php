@@ -180,9 +180,16 @@ class SocialUserService
             return $this->createSocialUserForEmail();
         }
 
-        return $this->getDriver($slug)
-            ->stateless()
-            ->user();
+        $driver = $this->getDriver($slug);
+
+        if (
+            $socialNetwork->slug == 'facebook' ||
+            $socialNetwork->slug == 'instagram'
+        ) {
+            $driver->stateless();
+        }
+
+        return $driver->user();
     }
 
     /**
