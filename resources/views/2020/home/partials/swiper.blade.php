@@ -9,19 +9,24 @@
 
     <div class="container ">
         <div class="row swipper-banner pt-2">
-            <div class="col-12 col-lg-6 text-center ">
+            <div class="col-12 offset-lg-2 col-lg-8 text-center ">
 
                 <blockquote class="speech bubble">
                     <div class="inner">
                         <h4 class="">Inscrições</h4>
 
-                        <p class="fontbigger"> De 30 de março <br>a 17 de maio </p>
-                        <p> Para alunos do 1º e 2º ano do ensino médio da rede pública estadual, com idade entre 14 e 17 anos.</p>
+                        <p class="fontbigger"> IMPORTANTE </p>
+                        <p>
+                            Devido a pandemia, todo o cronograma do Parlamento Juvenil de 2020 está sujeito a alterações.
+                        </p>
+                        <p>
+                            O prazo final de inscrições estará vinculado ao novo calendário escolar. Assim, seguem abertas as inscrições para os alunos do 1° e 2° ano do ensino médio da rede pública estadual, com idade entre 14 e 17 anos.
+                        </p>
                     </div>
                 </blockquote>
 
             </div>
-
+{{--
             <div class="col-12 col-lg-6">
                 <blockquote class="speech-reverse bubble">
 
@@ -37,9 +42,8 @@
                         </p>
                     </div>
                 </blockquote>
-
-
             </div>
+            --}}
 
         </div>
     </div>
