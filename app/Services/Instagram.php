@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use Vinkla\Instagram\Instagram as VinklaInstagram;
+use Cache;
 
 class Instagram
 {
@@ -17,10 +18,12 @@ class Instagram
 
     public function getImagesUrl($count = 0)
     {
-        return collect($this->instagram->media(['count' => $count]))->map(
-            function ($item) {
-                return $item->images->standard_resolution->url;
-            }
-        );
+        return Cache::remember('getImagesUrl', 15, function () use ($count) {
+            return collect($this->instagram->media(['count' => $count]))->map(
+                function ($item) {
+                    return $item->images->standard_resolution->url;
+                }
+            );
+        });
     }
 }
