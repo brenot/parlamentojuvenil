@@ -72,7 +72,8 @@ return [
     'cipher' => 'AES-256-CBC',
 
     'instagram' => [
-        'parlamentojuvenilrj' => env('PJ_INSTAGRAM_TOKEN')
+        'token' => env('PJ_INSTAGRAM_TOKEN', ''),
+        'username' => env('PJ_INSTAGRAM_USERNAME', 'parlamentojuvenilrj')
     ],
 
     /*
