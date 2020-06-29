@@ -2,7 +2,6 @@
 
 namespace App\Services;
 
-use Vinkla\Instagram\Instagram as VinklaInstagram;
 use Cache;
 use Instagram\Api as InstagramApi;
 use Exception;
@@ -15,7 +14,6 @@ class Instagram
     public function __construct()
     {
         $this->token = config('app.instagram.token');
-        $this->instagram = new VinklaInstagram($this->token);
     }
 
     public function getImagesUrl($count = 0)

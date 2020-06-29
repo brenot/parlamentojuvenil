@@ -23,7 +23,6 @@
         "league/flysystem-aws-s3-v3": "^1.0",
         "laravellegends/pt-br-validator": "^5.1",
         "bugsnag/bugsnag-laravel": "^2.0",
-        "vinkla/instagram": "^9.3",
         "php-http/message": "^1.8",
         "php-http/guzzle6-adapter": "^2.0",
         "pgrimaud/instagram-user-feed": "5.6.*"
