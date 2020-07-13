@@ -13,14 +13,14 @@
 
                 <blockquote class="speech bubble">
                     <div class="inner">
-                        <h4 class="">Inscrições</h4>
 
-                        <p class="fontbigger"> IMPORTANTE </p>
                         <p>
-                            Devido a pandemia, todo o cronograma do Parlamento Juvenil de 2020 está sujeito a alterações.
-                        </p>
+                            Devido à pandemia e a necessária readequação de todo calendário de 2020, comunicamos que a semana do Parlamento Juvenil prevista para novembro está adiada.</p>
                         <p>
-                            O prazo final de inscrições estará vinculado ao novo calendário escolar. Assim, seguem abertas as inscrições para os alunos do 1° e 2° ano do ensino médio da rede pública estadual, com idade entre 14 e 17 anos.
+                        A data, assim como o calendário de atividades, será divulgada assim que for definido o calendário escolar da Secretaria de Educação. </p>
+
+                        <p class="fontbigger">
+                        As inscrições seguirão abertas e todos que já se inscreveram permanecem validados.
                         </p>
                     </div>
                 </blockquote>
