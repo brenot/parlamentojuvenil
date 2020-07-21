@@ -18,12 +18,13 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\PjGeolocate::class,
         \App\Console\Commands\PjSchoolsExport::class,
         \App\Console\Commands\PjSeeduc::class,
+        \App\Console\Commands\PjSeeducSchools::class,
         \App\Console\Commands\PjSeeducTest::class,
         \App\Console\Commands\PopulateCities::class,
         \App\Console\Commands\PjMakeAdmin::class,
         \App\Console\Commands\PjListAdmin::class,
         \App\Console\Commands\PjFixCities::class,
-        \App\Console\Commands\PjRemoveDuplicateVotes::class,
+        \App\Console\Commands\PjRemoveDuplicateVotes::class
     ];
 
     /**
@@ -34,7 +35,6 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('pj:remove-duplicate-votes')
-                 ->hourly();
+        $schedule->command('pj:remove-duplicate-votes')->hourly();
     }
 }

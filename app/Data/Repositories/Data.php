@@ -136,22 +136,23 @@ class Data extends Repository
         if (!$school) {
             return false;
         }
+        if (!blank($data['school_email'])) {
+            Mail::send('emails.new-subscription', ['data' => $data], function (
+                $m
+            ) use ($data) {
+                $subject = 'Inscrição no Parlamento Juvenil: ' . $data['name'];
 
-        Mail::send('emails.new-subscription', ['data' => $data], function (
-            $m
-        ) use ($data) {
-            $subject = 'Inscrição no Parlamento Juvenil: ' . $data['name'];
+                $m->subject($subject);
 
-            $m->subject($subject);
+                $m->to($data['school_email'], $data['school_name']);
 
-            $m->to($data['school_email'], $data['school_name']);
+                //            $m->to('PJALERJ@GMAIL.COM', 'Parlamento Juvenil');
 
-            //            $m->to('PJALERJ@GMAIL.COM', 'Parlamento Juvenil');
+                //            $m->to('acr@antoniocarlosribeiro.com', 'Antonio Carlos Ribeiro');
 
-            //            $m->to('acr@antoniocarlosribeiro.com', 'Antonio Carlos Ribeiro');
-
-            //            $m->to('afaria@alerj.rj.gov.br', 'Antonio Carlos Ribeiro (Alerj)');
-        });
+                //            $m->to('afaria@alerj.rj.gov.br', 'Antonio Carlos Ribeiro (Alerj)');
+            });
+        }
     }
 
     public function getTimeline($year)
