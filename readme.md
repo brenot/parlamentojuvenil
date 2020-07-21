@@ -38,7 +38,8 @@ NASCIMENTO (formato Y-m-d H:i:s.u)
 
 #### Comandos
 ```
-php artisan pj:seeduc <path_to_csv_file>
+php artisan pj:seeduc <path_to_csv_file> --dont-truncate
+php artisan pj:seeduc:schools <path_to_csv_file> --dont-truncate
 php artisan pj:seeduc:test-data
 ```
 
@@ -55,3 +56,10 @@ SUBSCRIPTIONS_ENABLED=true
 SUBSCRIPTIONS_START=yyyy-mm-dd
 SUBSCRIPTIONS_END=yyyy-mm-dd
 ```
+
+###Escolas não cadastradas de alunos cadastrados
+`select distinct escola from seeduc where escola not in (select name from schools) order by escola;`
+
+###Alunos na idade de inscrição cujas escolas não estão cadastradas
+`select * from seeduc where escola in (select distinct escola from seeduc where escola not in (select name from schools)) and  nascimento >= '2002-11-28' and nascimento <= '2005-11-25';`
+`select count(*) from seeduc where escola in (select distinct escola from seeduc where escola not in (select name from schools)) and  nascimento >= '2002-11-28' and nascimento <= '2005-11-25';`
