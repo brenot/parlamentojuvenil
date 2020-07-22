@@ -1,19 +1,5 @@
 ## Parlamento Juvenil da ALERJ
 
-### Votes per hour
-
-```
-SELECT 
-    to_timestamp(floor((extract('epoch' from created_at) / 3600 )) * 3600) AT TIME ZONE 'UTC' as hora,
-    (select count(*) from votes) as votos_total,
-    COUNT(*) votos_na_hora, 
-    CAST(round((COUNT(*)  * 100.00) / (select count(*) from votes), 2) AS text) || '%' as percentual
-FROM votes
-GROUP BY hora
-ORDER BY hora desc
-;
-```
-
 ### Comandos para popular o banco de dados vazio para testes
 
 ```
@@ -57,9 +43,35 @@ SUBSCRIPTIONS_START=yyyy-mm-dd
 SUBSCRIPTIONS_END=yyyy-mm-dd
 ```
 
-###Escolas não cadastradas de alunos cadastrados
-`select distinct escola from seeduc where escola not in (select name from schools) order by escola;`
+###Queries
 
-###Alunos na idade de inscrição cujas escolas não estão cadastradas
-`select * from seeduc where escola in (select distinct escola from seeduc where escola not in (select name from schools)) and  nascimento >= '2002-11-28' and nascimento <= '2005-11-25';`
-`select count(*) from seeduc where escola in (select distinct escola from seeduc where escola not in (select name from schools)) and  nascimento >= '2002-11-28' and nascimento <= '2005-11-25';`
+####Escolas não cadastradas de alunos cadastrados
+```
+select distinct escola from seeduc where escola not in (select name from schools) order by escola;
+```
+
+####Alunos na idade de inscrição cujas escolas não estão cadastradas
+```
+select * from seeduc where escola in (select distinct escola from seeduc where escola not in (select name from schools)) and  nascimento >= '2002-11-28' and nascimento <= '2005-11-25';
+```
+```
+select count(*) from seeduc where escola in (select distinct escola from seeduc where escola not in (select name from schools)) and  nascimento >= '2002-11-28' and nascimento <= '2005-11-25';
+```
+
+####Quantidade de escolas duplicadas(com o mesmo censo)
+```
+select count(*) from (select count(*), censo from schools group by censo) aux where aux.count>1;
+```
+
+### Votes per hour
+```
+SELECT 
+    to_timestamp(floor((extract('epoch' from created_at) / 3600 )) * 3600) AT TIME ZONE 'UTC' as hora,
+    (select count(*) from votes) as votos_total,
+    COUNT(*) votos_na_hora, 
+    CAST(round((COUNT(*)  * 100.00) / (select count(*) from votes), 2) AS text) || '%' as percentual
+FROM votes
+GROUP BY hora
+ORDER BY hora desc
+;
+```
