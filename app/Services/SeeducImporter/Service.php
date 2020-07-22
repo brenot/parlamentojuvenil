@@ -131,14 +131,13 @@ class Service
                 try {
                     if (
                         SchoolModel::where(
-                            'name',
-                            utf8_encode($row[0])
+                            'censo',
+                            utf8_encode($row[1])
                         )->count() > 0
                     ) {
                         $model = SchoolModel::updateOrCreate(
-                            ['name' => utf8_encode($row[0])],
+                            ['censo' => utf8_encode($row[1])],
                             [
-                                'censo' => utf8_encode($row[1]),
                                 'address' => utf8_encode($row[2]),
                                 'number' => utf8_encode($row[3]),
                                 'complement' => utf8_encode($row[4]),
@@ -158,9 +157,10 @@ class Service
                         );
                     } else {
                         $model = SchoolModel::updateOrCreate(
-                            ['name' => utf8_encode($row[0])],
+                            ['censo' => utf8_encode($row[1])],
                             [
                                 'id' => SchoolModel::max('id') + 1,
+                                'name' => utf8_encode($row[0]),
                                 'censo' => utf8_encode($row[1]),
                                 'address' => utf8_encode($row[2]),
                                 'number' => utf8_encode($row[3]),
