@@ -9,19 +9,24 @@
 
     <div class="container ">
         <div class="row swipper-banner pt-2">
-            <div class="col-12 offset-lg-2 col-lg-8 text-center ">
+            <div class="col-12 offset-lg-1 col-lg-10 text-center ">
 
                 <blockquote class="speech bubble">
                     <div class="inner">
 
                         <p>
-                            Devido à pandemia e a necessária readequação de todo calendário de 2020, comunicamos que a semana do Parlamento Juvenil prevista para novembro está adiada.</p>
-                        <p>
-                        A data, assim como o calendário de atividades, será divulgada assim que for definido o calendário escolar da Secretaria de Educação. </p>
-
-                        <p class="fontbigger">
-                        As inscrições seguirão abertas e todos que já se inscreveram permanecem validados.
+                        Esse ano fomos forçados a nos adaptar a um novo modo de vida devido aos efeitos da pandemia que se estende mais do que havíamos imaginado.
                         </p>
+                        <p>
+                            E apesar de termos concluído algumas atividades de forma virtual, não será possível garantir todas as etapas para a realização do Parlamento Juvenil deste ano por ser inviável garantir, no contexto de prevenção ao contágio, a segurança necessária à realização das atividades desenvolvidas pelo grupo na Assembleia Legislativa.
+                        </p>
+                        <p>
+                            Assim, fora necessário tomar a difícil decisão de cancelamento desta edição. Agradecemos a todos o interesse em participar do projeto e esperamos que no próximo ano, todas as condições sanitárias sejam garantidas para que possamos realizar a 13ª edição do PJ.
+                        </p>
+
+
+
+
                     </div>
                 </blockquote>
 
